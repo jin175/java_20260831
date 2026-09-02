@@ -5,18 +5,18 @@ public class _7_대입연산자 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		int age = 30;
+		//int age = 30;
 		// age = age +1
-		age += 1 // age = age + 1;
-		age *= 2 // age = age * 2;
+		//age += 1 // age = age + 1;
+		//age *= 2 // age = age * 2;
 		
-		int num = 0
+		//int num = 0
 		// num 변수에 1부터 5까지 순차적으로 더하세요.
-		num= num+1; // 1
-		num= num+2; // 3
-		num= num+3; // 6
-		num= num+4; // 10
-		num= num+5; // 15
+		//num= num+1; // 1
+		//num= num+2; // 3
+		//num= num+3; // 6
+		//num= num+4; // 10
+		//num= num+5; // 15
 		
 		int num2 = 0;
 		num2 += 1;
