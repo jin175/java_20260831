@@ -7,6 +7,7 @@ public class _8_랜덤구구단 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
 		// 랜덤한 구구단 문제를 제공해주고 정답을 입력받아서
 		// 맞추면 '정답', 틀리면 '오답' 출력
 		Scanner scan = new Scanner(System.in);
@@ -25,6 +26,7 @@ public class _8_랜덤구구단 {
 		}
 		
 
+		
 	}
 
 }
