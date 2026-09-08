@@ -1,5 +1,4 @@
 package day4;
-
 import java.util.Arrays;
 
 public class _12_선택정렬 {
@@ -27,6 +26,7 @@ public class _12_선택정렬 {
 		System.out.println(Arrays.toString(arr));
 		
 		
+<<<<<<< HEAD
 		minIndex = 1; // 2번째
 		for(int i=2; i<arr.length; i++) {
 			if(arr[minIndex] > arr[i]) {
@@ -52,6 +52,32 @@ public class _12_선택정렬 {
 		
 		
 		minIndex = 3; // 4번째
+=======
+		minIndex = 1;
+		for(int i=2; i<arr.length; i++) {
+			if(arr[minIndex] > arr[i]) {
+				minIndex = i;
+			}
+		}
+		temp = arr[1];
+		arr[1] = arr[minIndex];
+		arr[minIndex] = temp;
+		System.out.println(Arrays.toString(arr));
+		
+		
+		minIndex = 2;
+		for(int i=3; i<arr.length; i++) {
+			if(arr[minIndex] > arr[i]) {
+				minIndex = i;
+			}
+		}
+		temp = arr[2];
+		arr[2] = arr[minIndex];
+		arr[minIndex] = temp;
+		System.out.println(Arrays.toString(arr));
+		
+		minIndex = 3;
+>>>>>>> branch 'main' of https://github.com/jin175/java_20260831.git
 		for(int i=4; i<arr.length; i++) {
 			if(arr[minIndex] > arr[i]) {
 				minIndex = i;
@@ -63,4 +89,8 @@ public class _12_선택정렬 {
 		System.out.println(Arrays.toString(arr));
 		
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> branch 'main' of https://github.com/jin175/java_20260831.git

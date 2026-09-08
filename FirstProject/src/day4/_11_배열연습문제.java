@@ -23,4 +23,8 @@ public class _11_배열연습문제 {
 							 // 메소드내에서 Arrays.toString() 배열 출력
 		
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> branch 'main' of https://github.com/jin175/java_20260831.git

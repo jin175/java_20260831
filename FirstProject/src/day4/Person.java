@@ -26,4 +26,8 @@ public class Person {
 	}
 	
 	
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> branch 'main' of https://github.com/jin175/java_20260831.git
