@@ -13,8 +13,4 @@ public class _9_생성자 {
 		
 		Person park = new Person("박영희", 28, "제주도");
 	}
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> branch 'main' of https://github.com/jin175/java_20260831.git
