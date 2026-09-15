@@ -17,5 +17,32 @@ public class MyFunction {
 	
 	
 	
+	public static int checkNumber(String msg, int min, int max) {
+		while(true) {
+			System.out.println(msg);
+			int input = s.nextInt();
+			if(input >= min && input <= max) {
+				return input;
+			}
+			System.out.println("구매 가능 개수는 " + min + "~" + max + "개입니다.");
+		}
+	}
+	
+	
+	
+	public static int sCheck(String msg) {
+		while(true) {
+			System.out.print(msg);
+			int num = s.nextInt();
+			if(num >= 0 && num <= 100) {
+				return num;
+			}
+			System.out.println("0~100 사이의 점수를 입력해주세요.");
+		}
+	}
+	
+	
+	
+	
 
 }
