@@ -5,27 +5,30 @@ import java.awt.FlowLayout;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JRadioButton;
 
-public class CheckBoxItemEventEx extends JFrame{
+public class RadioBtnItemEventEx extends JFrame{
 	int sum = 0;
-	public CheckBoxItemEventEx() {
+	public RadioBtnItemEventEx() {
 		// TODO Auto-generated constructor stub
 		setTitle("체크박스 이벤트");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		
-		JCheckBox fruits[] = new JCheckBox[3];
+		ButtonGroup group = new ButtonGroup();
+		JRadioButton fruits[] = new JRadioButton[3];
 		String furitNames[] = {"사과", "배", "체리"};
 		
 		c.add(new JLabel("사과100원, 배500원, 체리20000원"));
 		JLabel sumLabel= new JLabel("현재 0 원입니다.");
 		
 		for(int i=0; i<fruits.length; i++) {
-			fruits[i] = new JCheckBox(furitNames[i]);
+			fruits[i] = new JRadioButton(furitNames[i]);
 			fruits[i].addItemListener(new ItemListener() {
 				@Override
 				public void itemStateChanged(ItemEvent e) {
@@ -54,6 +57,7 @@ public class CheckBoxItemEventEx extends JFrame{
 					sumLabel.setText("현재 " + sum + "원입니다.");
 				}
 			});
+			group.add(fruits[i]);
 			c.add(fruits[i]);
 		}
 		
@@ -65,7 +69,7 @@ public class CheckBoxItemEventEx extends JFrame{
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new CheckBoxItemEventEx();
+		new RadioBtnItemEventEx();
 	}
 
 }
