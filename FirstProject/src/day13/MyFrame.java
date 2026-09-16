@@ -1,10 +1,10 @@
-package day12;
+package day13;
 
 import java.awt.Container;
 
 import javax.swing.JFrame;
 
-public class MyFrame extends JFrame {
+public class MyFrame extends JFrame{
 	
 	MyFrame(){
 		setTitle("첫번째 화면!!");
@@ -17,12 +17,7 @@ public class MyFrame extends JFrame {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
 		new MyFrame();
-		
-		
-		
-		
 	}
 
 }
