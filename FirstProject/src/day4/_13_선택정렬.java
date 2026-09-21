@@ -18,9 +18,9 @@ public class _13_선택정렬 {
 			int temp = arr[j];
 			arr[j] = arr[minIndex];
 			arr[minIndex] = temp;
-			System.out.println(Arrays.toString(arr));
 			
-		}
+			
+		}System.out.println(Arrays.toString(arr));
 
 	}
 

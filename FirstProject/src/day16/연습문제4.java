@@ -1,0 +1,67 @@
+package day16;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class 연습문제4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int arr1[] = new int[5];
+		// 스캐너를 통해 입력 받은 값을 5개 공간 배열에 값 넣기
+		// 값은 10~30 사이 값만 넣기.
+		// 그 외 값은 다시 입력받기
+
+//		Scanner s = new Scanner(System.in);
+//		
+//		
+//		for (int i = 0; i < arr1.length; i++) {
+//			System.out.println((i+1) + "번 입력 : ");
+//			int num = s.nextInt();
+//			if(num >= 10 && num <= 30) {
+//			    arr1[i] = num;
+//			    
+//			} else {
+//				System.out.println("10~30 입력");
+//				i--;
+//			}
+//			
+//		}System.out.println(Arrays.toString(arr1));
+
+		int arr2[] = { 3, 9, 6, 5, 4, 2, 15, 8 };
+		// 홀수 먼저 정렬 => 오름차순
+		// 짝수 뒤에 정렬 => 내림차순
+		// 결과 : {3,5,9,15,8,6,4,2}
+		// 결과는 배열로 출력. 새로운 배열 만들어도 됨
+		// 최초 배열의 홀수, 짝수 개수는 같다고 가정
+
+//		Arrays.sort(arr2);
+		System.out.println(Arrays.toString(arr2));
+
+		ArrayList<Integer> list = new ArrayList<>();
+		ArrayList<Integer> list2 = new ArrayList<>();
+
+		for (int i = 0; i < arr2.length; i++) {
+			if (arr2[i] % 2 == 1) {
+				list.add(arr2[i]);
+				continue;
+			} 
+			
+			if (arr2[i] % 2 == 1) {
+				list.add(arr2[i]);
+			} 	
+				arr2[i] = -arr2[i];
+				Arrays.sort(arr2);
+				
+			
+				
+			
+			
+			
+			}
+		System.out.println(list);
+		System.out.println(list2);
+
+	}
+}
