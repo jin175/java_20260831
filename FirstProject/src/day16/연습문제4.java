@@ -37,31 +37,35 @@ public class 연습문제4 {
 		// 최초 배열의 홀수, 짝수 개수는 같다고 가정
 
 //		Arrays.sort(arr2);
-		System.out.println(Arrays.toString(arr2));
-
-		ArrayList<Integer> list = new ArrayList<>();
-		ArrayList<Integer> list2 = new ArrayList<>();
-
-		for (int i = 0; i < arr2.length; i++) {
-			if (arr2[i] % 2 == 1) {
-				list.add(arr2[i]);
-				continue;
-			} 
+		
+		
+		int oddArr[] = new int[arr2.length/2];
+		int evenArr[] = new int[arr2.length/2];
+		int oddCount = 0;
+		int evenCount = 0;
+		
+		for(int i=0; i<arr2.length; i++) {
 			
-			if (arr2[i] % 2 == 1) {
-				list.add(arr2[i]);
-			} 	
-				arr2[i] = -arr2[i];
-				Arrays.sort(arr2);
+			if(arr2[i] % 2 == 0) {
+				evenArr[evenCount] = arr2[i];
+				evenCount++;
 				
-			
-				
-			
-			
-			
+			} else {
+				oddArr[oddCount] = arr2[i];
+				oddCount++;
 			}
-		System.out.println(list);
-		System.out.println(list2);
-
+		}
+		
+		Arrays.sort(oddArr);
+		Arrays.sort(evenArr);
+		
+		for(int i=0; i<oddArr.length; i++) {
+			arr2[i] = oddArr[i];
+		}
+		for(int i=oddArr.length; i<arr2.length; i++) {
+			arr2[i] = evenArr[oddCount-1];
+			oddCount--;
+		}
+		System.out.println(Arrays.toString(arr2));
 	}
 }
